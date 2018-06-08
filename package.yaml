@@ -1,0 +1,10 @@
+name: s2n-test
+
+library:
+  source-dirs: lib
+
+  dependencies:
+    - base
+
+    - async
+    - hashable
