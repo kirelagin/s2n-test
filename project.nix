@@ -6,8 +6,8 @@
   };
 
   packages = {
-    s2n-pkg1 = ./pkg1;
-    s2n-pkg2 = ./pkg2;
+    s2n-pkg1 = "./pkg1";
+    s2n-pkg2 = "./pkg2";
   };
 
   extra-deps = {
