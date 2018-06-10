@@ -1,6 +1,8 @@
 resolver: lts-10.7
 
-packages: [ . ]
+packages:
+  - ./pkg1
+  - ./pkg2
 
 extra-deps:
   - async-2.2.1

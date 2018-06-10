@@ -1,0 +1,11 @@
+name: s2n-pkg1
+
+library:
+  source-dirs: lib
+
+  dependencies:
+    - base
+
+    - async
+    - caps
+    - hashable

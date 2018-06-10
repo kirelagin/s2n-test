@@ -1,4 +1,4 @@
-name: s2n-test
+name: s2n-pkg2
 
 library:
   source-dirs: lib
@@ -6,6 +6,4 @@ library:
   dependencies:
     - base
 
-    - async
-    - caps
-    - hashable
+    - s2n-pkg1

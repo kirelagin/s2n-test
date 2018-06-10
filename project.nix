@@ -1,11 +1,13 @@
 {
-  name = "s2n";
-  path = ./.;
-
   resolver = "lts-10.7";
   nixpkgs = {
     url = "https://github.com/NixOS/nixpkgs/archive/d0b24f28fa364ff758f86f2f742f80e0f0e603a2.tar.gz";
     sha256 = "0hmw0wf4h5aqlzc9ag3xxqr0wcxdaa7p23scbnqixs2b488aj48r";
+  };
+
+  packages = {
+    s2n-pkg1 = ./pkg1;
+    s2n-pkg2 = ./pkg2;
   };
 
   extra-deps = {
