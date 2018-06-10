@@ -1,7 +1,7 @@
 { system ? builtins.currentSystem }:
 
 let
-  nixage-commit = "7d96458eb92f077b409eb7cb5c30fc5feadf2272";
+  nixage-commit = "c42c5b0c9781fb061edf4d60772fb4459b35c4b4";
   nixage = import (fetchTarball "https://github.com/kirelagin/nixage/archive/${nixage-commit}.tar.gz") {
     inherit system;
     config = { allowUnfree = true; };

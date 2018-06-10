@@ -4,8 +4,7 @@
 
   resolver = "lts-10.7";
   nixpkgs = {
-    url = "https://github.com/NixOS/nixpkgs.git";
-    rev = "d0b24f28fa364ff758f86f2f742f80e0f0e603a2";
+    url = "https://github.com/NixOS/nixpkgs/archive/d0b24f28fa364ff758f86f2f742f80e0f0e603a2.tar.gz";
     sha256 = "0hmw0wf4h5aqlzc9ag3xxqr0wcxdaa7p23scbnqixs2b488aj48r";
   };
 
