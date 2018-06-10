@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# A quick and dirty script that nevertheless build this project using stack.
+# In order to do this, it uses nixage to generate `stack.yaml` and then invokes
+# `stack build` (taking `stack` from nixpkgs).
+
+
+nixage_commit=$(sed -nE 's/.*nixage-commit = "(.*)".*/\1/p' default.nix)
+nixage_url="https://github.com/kirelagin/nixage/archive/$nixage_commit.tar.gz"
+build_expr='let n = import <nixage> {}; in n.toStack (n.fromYaml ./project.yaml)'
+
+stack=$(nix-build '<nixpkgs>' -A pkgs.stack --no-out-link)/bin/stack
+
+nix-build -I "nixage=$nixage_url" -E "$build_expr" -o stack.yaml >/dev/null && {
+  "$stack" build
+  rm stack.yaml
+}
