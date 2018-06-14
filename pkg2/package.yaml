@@ -7,3 +7,5 @@ library:
     - base
 
     - s2n-pkg1
+
+    - loot-crypto
