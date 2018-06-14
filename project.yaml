@@ -20,12 +20,12 @@ extra-deps:
     sha256: 0a3ilj6qr4b6abv10l8z1dlllf3aw8ap0ll12zxxm3zqn4n3z2i5
   loot-crypto:
     git: https://github.com/serokell/lootbox.git
-    rev: 271dd1965a8893a9697ebebfdd5bfcbf6d5aa787
+    rev: 983b19bd438a47c91184b0b71213e76cc9983b03
     subdir: code/crypto
-    sha256: 016yndns1c7myrvxnjsj4yg8cb4z3f484k5gyhy5p6cwxnizpzc8
+    sha256: 0wy34066zg8ww2apxv5jlad53r2pcjv88jhww0npn05bck9lyqp2
 
   loot-prelude:  # required for loot-crypto
     git: https://github.com/serokell/lootbox.git
-    rev: 271dd1965a8893a9697ebebfdd5bfcbf6d5aa787
+    rev: 983b19bd438a47c91184b0b71213e76cc9983b03
     subdir: code/prelude
-    sha256: 016yndns1c7myrvxnjsj4yg8cb4z3f484k5gyhy5p6cwxnizpzc8
+    sha256: 0wy34066zg8ww2apxv5jlad53r2pcjv88jhww0npn05bck9lyqp2
